@@ -46,6 +46,7 @@ def practice_msg(x):
     pmessage = ' '.join(empty_list)
 
     print("Now practicing: " + pmessage)
+    print("Type 'q' to quit")
 
 
 # Pick random operation

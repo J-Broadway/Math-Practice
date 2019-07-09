@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Math Practice.iml" filepath="$PROJECT_DIR$/.idea/Math Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ShotioKart/.idea/ShotioKart.iml" filepath="$PROJECT_DIR$/../ShotioKart/.idea/ShotioKart.iml" />
     </modules>
   </component>
 </project>

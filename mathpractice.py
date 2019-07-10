@@ -135,8 +135,12 @@ elif args.ranges is not None:
                     range2min = int(input('Range 2 Min: '))
                     range2max = int(input('Range 2 Max: '))
 
-                    range_check = input('Is {}-{}, {}-{} correct? (Y/N): '.format(range1min, range1max, range2min,
-                                                                               range2max)).lower()
+                    range_check = str(input('Is {}-{}, {}-{} correct? (Y/N): '.format(range1min, range1max, range2min,
+                                                                               range2max)).lower())
+                    if range_check == "y" or range_check == "n":
+                        pass
+                    else:
+                        raise Exception
                     ranges['a'] = [[range1min, range1max], [range2min, range2max]]
 
                 save_ranges()
@@ -151,8 +155,12 @@ elif args.ranges is not None:
                     range2min = int(input('Range 2 Min: '))
                     range2max = int(input('Range 2 Max: '))
 
-                    range_check = input('Is {}-{}, {}-{} correct? (Y/N): '.format(range1min, range1max, range2min,
-                                                                               range2max)).lower()
+                    range_check = str(input('Is {}-{}, {}-{} correct? (Y/N): '.format(range1min, range1max, range2min,
+                                                                               range2max)).lower())
+                    if range_check == "y" or range_check == "n":
+                        pass
+                    else:
+                        raise Exception
                     ranges['s'] = [[range1min, range1max], [range2min, range2max]]
 
                 save_ranges()
@@ -167,8 +175,12 @@ elif args.ranges is not None:
                     range2min = int(input('Range 2 Min: '))
                     range2max = int(input('Range 2 Max: '))
 
-                    range_check = input('Is {}-{}, {}-{} correct? (Y/N): '.format(range1min, range1max, range2min,
-                                                                               range2max)).lower()
+                    range_check = str(input('Is {}-{}, {}-{} correct? (Y/N): '.format(range1min, range1max, range2min,
+                                                                               range2max)).lower())
+                    if range_check == "y" or range_check == "n":
+                        pass
+                    else:
+                        raise Exception
                     ranges['m'] = [[range1min, range1max], [range2min, range2max]]
 
                 save_ranges()
@@ -183,8 +195,12 @@ elif args.ranges is not None:
                     range2min = int(input('Range 2 Min: '))
                     range2max = int(input('Range 2 Max: '))
 
-                    range_check = input('Is {}-{}, {}-{} correct? (Y/N): '.format(range1min, range1max, range2min,
-                                                                               range2max)).lower()
+                    range_check = str(input('Is {}-{}, {}-{} correct? (Y/N): '.format(range1min, range1max, range2min,
+                                                                               range2max)).lower())
+                    if range_check == "y" or range_check == "n":
+                        print("yup")
+                    else:
+                        raise Exception
                     ranges['d'] = [[range1min, range1max], [range2min, range2max]]
 
                 save_ranges()

@@ -232,3 +232,10 @@ elif args.list is not None:
                 print('Division: ' + mystr)
     except:
         print('Invalid Input')
+
+namespace = vars(args)
+if list(namespace.values()).count(None) == 3:
+    args.practice = valid_operations
+    practice_msg(args.practice)
+    load_ranges()
+    math_practice()

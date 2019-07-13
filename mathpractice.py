@@ -2,6 +2,9 @@ import argparse
 import random
 import pickle
 import sys
+import initialize
+
+initialize.main()
 
 parser = argparse.ArgumentParser(description='Math Practice')
 g = parser.add_mutually_exclusive_group()

@@ -110,8 +110,39 @@ def math_practice():
             except ValueError:
                 print("Not a valid input.")
     elif operation == 'd':
-        print(max(shuffle_list))
-
+        # Find all divisors of num and append to list
+        num = num1 * num2
+        largest = max(max(ranges['d']))
+        emptylist = []
+        i = 1
+        while i <= num:
+            if num % i == 0:
+                emptylist.append(i)
+            i += 1
+        newlist = []
+        for x in emptylist:
+            if x < largest:
+                newlist.append(x)
+        emptylist = []
+        for x in newlist:
+            emptylist.append(num/x)
+        newlist = []
+        for x in emptylist:
+            if x < largest:
+                newlist.append(x)
+        divisor = int(random.sample(newlist, 1)[0])
+        answer = num / divisor
+        while True:
+            try:
+                user_input = input('{} / {} = '.format(num, divisor))
+                if str(user_input).lower() == 'q':
+                    break
+                elif answer == int(user_input):
+                    math_practice()
+                else:
+                    print("Ur Gay")
+            except ValueError:
+                print("Not a valid input.")
 
     print("Practice Finished")
     sys.exit()

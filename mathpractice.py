@@ -109,6 +109,9 @@ def math_practice():
                     print("Ur Gay")
             except ValueError:
                 print("Not a valid input.")
+    elif operation == 'd':
+        print(max(shuffle_list))
+
 
     print("Practice Finished")
     sys.exit()

@@ -66,7 +66,7 @@ def math_practice():
     b1 = ranges[operation][1][0]
     b2 = ranges[operation][1][1]
 
-    shuffle_list = random.sample([random.randrange(a1, a2), random.randrange(b1, b2)], 2)
+    shuffle_list = random.sample([random.randint(a1, a2), random.randint(b1, b2)], 2)
     num1 = shuffle_list[0]
     num2 = shuffle_list[1]
 
@@ -110,27 +110,8 @@ def math_practice():
             except ValueError:
                 print("Not a valid input.")
     elif operation == 'd':
-        # Find all divisors of num and append to list
         num = num1 * num2
-        largest = max(max(ranges['d']))
-        emptylist = []
-        i = 1
-        while i <= num:
-            if num % i == 0:
-                emptylist.append(i)
-            i += 1
-        newlist = []
-        for x in emptylist:
-            if x < largest:
-                newlist.append(x)
-        emptylist = []
-        for x in newlist:
-            emptylist.append(num/x)
-        newlist = []
-        for x in emptylist:
-            if x < largest:
-                newlist.append(x)
-        divisor = int(random.sample(newlist, 1)[0])
+        divisor = random.sample([num1, num2], 1)[0]
         answer = num / divisor
         while True:
             try:
@@ -235,7 +216,7 @@ elif args.ranges is not None:
                     range_check = str(input('Is {}-{}, {}-{} correct? (Y/N): '.format(range1min, range1max, range2min,
                                                                                range2max)).lower())
                     if range_check == "y" or range_check == "n":
-                        print("yup")
+                        pass
                     else:
                         raise Exception
                     ranges['d'] = [[range1min, range1max], [range2min, range2max]]

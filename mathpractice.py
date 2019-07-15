@@ -159,7 +159,7 @@ elif args.ranges is not None:
                         pass
                     else:
                         raise Exception
-                    ranges['a'] = [[range1min, range1max], [range2min, range2max]]
+                    ranges['a'] = [sorted([range1min, range1max]), sorted([range2min, range2max])]
 
                 save_ranges()
 
@@ -179,7 +179,7 @@ elif args.ranges is not None:
                         pass
                     else:
                         raise Exception
-                    ranges['s'] = [[range1min, range1max], [range2min, range2max]]
+                    ranges['s'] = [sorted([range1min, range1max]), sorted([range2min, range2max])]
 
                 save_ranges()
 
@@ -199,7 +199,7 @@ elif args.ranges is not None:
                         pass
                     else:
                         raise Exception
-                    ranges['m'] = [[range1min, range1max], [range2min, range2max]]
+                    ranges['m'] = [sorted([range1min, range1max]), sorted([range2min, range2max])]
 
                 save_ranges()
 
@@ -219,7 +219,7 @@ elif args.ranges is not None:
                         pass
                     else:
                         raise Exception
-                    ranges['d'] = [[range1min, range1max], [range2min, range2max]]
+                    ranges['d'] = [sorted([range1min, range1max]), sorted([range2min, range2max])]
 
                 save_ranges()
 
